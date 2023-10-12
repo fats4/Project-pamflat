@@ -75,9 +75,8 @@ nav ul li a:hover{
     Slider
 */
 .slider-wrapper {
-    padding-top: 2rem;
 	position: relative;
-	max-width: 50rem;
+	max-width: 48rem;
 	margin: 0 auto;
 }
 
@@ -104,6 +103,37 @@ nav ul li a:hover{
 	object-fit: cover;
 }
 
+.slider-nav {
+	display: flex;
+	column-gap: 1rem;
+	position: absolute;
+	bottom: 1.25rem;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 1;
+}
+
+.slider-nav a {
+    text-decoration: none;
+    color: var(--b1);
+	width: 5rem;
+	height: 1.5rem;
+    text-align: center;
+    border-radius: 1.5rem;
+	background-color: #fff;
+	opacity: 0.75;
+	transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+	opacity: 1;
+}
+
+.container h1{
+    text-align: center;
+    padding-bottom: 0.5rem;
+}
+
 .social-links img{
     height: 13px;
     margin: 20px;
@@ -112,5 +142,5 @@ nav ul li a:hover{
 .social-links{
     text-align: center;
     position: relative;
-    padding-top: 5rem;
+    padding-top: 3rem;
 }
